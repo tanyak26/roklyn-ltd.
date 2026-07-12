@@ -1,0 +1,12 @@
+{
+  "name": "roklyn-ltd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone ROKLYN LTD website.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
