@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="ROKLYN LTD">
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="#fffdf7"/>
+  <path d="M6 72 72 6h18v18L24 90H6V72Z" fill="#9fc8b7"/>
+  <path d="M14 17h68v12H14V17Zm0 50h68v12H14V67Z" fill="#e7bb3d"/>
+  <path d="M25 34h21c12 0 19 6 19 16 0 6-3 11-8 14l10 14H52L43 66h-5v12H25V34Zm13 11v10h8c4 0 6-2 6-5s-2-5-6-5h-8Z" fill="#11140f"/>
+  <path d="M66 34h13v32h14v12H66V34Z" fill="#11140f"/>
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="none" stroke="#11140f" stroke-width="6"/>
+</svg>
