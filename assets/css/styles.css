@@ -818,6 +818,40 @@ textarea {
   color: var(--clay);
 }
 
+.footer__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 36px;
+  color: #d62976;
+  font-weight: 800;
+  transition: transform 0.2s ease;
+}
+
+.footer__social a:hover {
+  transform: translateY(-2px);
+}
+
+.footer__social svg {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: url("#instagram-gradient");
+  stroke-width: 2;
+}
+
+.footer__social span {
+  color: rgba(17, 20, 15, 0.72);
+}
+
 .footer__bottom {
   margin-top: 34px;
   padding-top: 22px;
