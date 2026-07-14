@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <div class="top-strip"><div class="top-strip__inner"><span><a href="tel:+447346248140">07346 248140</a> | Gmail</span></div></div>
+      <div class="top-strip"><div class="top-strip__inner"><span><a href="tel:+447346248140">07346 248140</a> | <a href="mailto:info@roklynltd.co.uk">info@roklynltd.co.uk</a></span></div></div>
       <nav class="nav" aria-label="Primary navigation"><div class="nav__inner"><a class="brand" href="index.html"><span class="brand__logo"><img src="assets/brand/roklyn-logo-site-colours.png" alt="ROKLYN Limited"></span></a><button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav__links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="workforce.html">Workforce</a><a href="projects.html">Projects</a><a href="contact.html" aria-current="page">Contact</a></div></div></nav>
     </header>
     <main>
@@ -21,19 +21,26 @@
             <h2>ROKLYN LTD</h2>
             <ul class="contact-list">
               <li><a href="tel:+447346248140">07346 248140</a></li>
+              <li><a href="mailto:info@roklynltd.co.uk">info@roklynltd.co.uk</a></li>
               <li>Specialised construction and employment placement</li>
             </ul>
           </aside>
           <section class="form-panel">
             <h2>Make an enquiry</h2>
-            <form class="form-grid" data-contact-form>
+            <p class="form-intro">Send your site, labour or placement details and ROKLYN LTD will reply from info@roklynltd.co.uk.</p>
+            <p class="form-status" data-form-sent hidden>Thank you. Your enquiry has been sent to ROKLYN LTD.</p>
+            <form class="form-grid" action="https://formsubmit.co/info@roklynltd.co.uk" method="POST" data-contact-form>
+              <input type="hidden" name="_subject" value="New ROKLYN LTD website enquiry">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://roklynltd.co.uk/contact.html?sent=1">
               <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
               <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" autocomplete="tel" required></div>
               <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
-              <div class="field"><label for="type">I am</label><select id="type" name="type"><option>Contractor or employer</option><option>Worker or candidate</option><option>Other enquiry</option></select></div>
-              <div class="field field--full"><label for="service">Service needed</label><select id="service" name="service"><option>Construction labour support</option><option>Specialist activity support</option><option>Employment placement</option><option>Project discussion</option></select></div>
-              <div class="field field--full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us the site location, date, headcount, hours and work type."></textarea></div>
-              <div class="field field--full"><button class="button" type="submit">Create enquiry note</button><p data-form-status role="status"></p></div>
+              <div class="field"><label for="type">I am</label><select id="type" name="enquiry_type"><option>Contractor or employer</option><option>Worker or candidate</option><option>Other enquiry</option></select></div>
+              <div class="field field--full"><label for="service">Service needed</label><select id="service" name="service_needed"><option>Construction labour support</option><option>Specialist activity support</option><option>Employment placement</option><option>Project discussion</option></select></div>
+              <div class="field field--full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us the site location, date, headcount, hours and work type." required></textarea></div>
+              <div class="field field--full"><button class="button" type="submit" data-submit-button>Send enquiry</button><p class="form-help">This enquiry is sent directly to info@roklynltd.co.uk.</p></div>
             </form>
           </section>
         </div>
@@ -55,7 +62,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer"><div class="footer__inner"><div class="footer__grid"><div><h3>ROKLYN LTD</h3><p>Specialist construction support and employment placement in London.</p></div><div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="workforce.html">Workforce</a></li><li><a href="about.html">About</a></li></ul></div><div><h4>Contact</h4><ul><li><a href="tel:+447346248140">07346 248140</a></li><li>London construction support</li></ul></div></div><div class="footer__bottom">© 2026 ROKLYN LTD. All rights reserved.</div></div></footer>
+    <footer class="footer"><div class="footer__inner"><div class="footer__grid"><div><h3>ROKLYN LTD</h3><p>Specialist construction support and employment placement in London.</p></div><div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="workforce.html">Workforce</a></li><li><a href="about.html">About</a></li></ul></div><div><h4>Contact</h4><ul><li><a href="tel:+447346248140">07346 248140</a></li><li><a href="mailto:info@roklynltd.co.uk">info@roklynltd.co.uk</a></li><li>London construction support</li></ul></div></div><div class="footer__bottom">© 2026 ROKLYN LTD. All rights reserved.</div></div></footer>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

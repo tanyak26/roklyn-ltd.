@@ -726,6 +726,13 @@ h1 {
   filter: saturate(0.85) contrast(1.04);
 }
 
+.form-intro {
+  margin: -4px 0 22px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -763,9 +770,20 @@ textarea {
   resize: vertical;
 }
 
-[data-form-status] {
+.form-help,
+.form-status {
   margin: 12px 0 0;
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.form-status {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--signal);
+  color: var(--ink);
+  background: rgba(232, 196, 58, 0.16);
   font-weight: 750;
 }
 
