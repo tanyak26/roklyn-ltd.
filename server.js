@@ -4,6 +4,14 @@ const path = require("path");
 
 const ROOT = __dirname;
 const PORT = process.env.PORT || 3101;
+const ROUTES = new Map([
+  ["", "index.html"],
+  ["about", "about.html"],
+  ["services", "services.html"],
+  ["workforce", "workforce.html"],
+  ["projects", "projects.html"],
+  ["contact", "contact.html"]
+]);
 
 const MIME_TYPES = {
   ".html": "text/html; charset=utf-8",
@@ -37,7 +45,7 @@ function sendFile(response, filePath) {
 const server = http.createServer((request, response) => {
   const url = new URL(request.url, `http://${request.headers.host || "localhost"}`);
   const cleanPath = decodeURIComponent(url.pathname).replace(/^\/+/, "");
-  const requestedPath = cleanPath || "index.html";
+  const requestedPath = ROUTES.get(cleanPath) || cleanPath || "index.html";
   const filePath = path.resolve(ROOT, requestedPath);
 
   if (!filePath.startsWith(ROOT)) {
